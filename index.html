@@ -4,13 +4,34 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <title>First HTML</title>
+  <title>Chris Harley</title>
 </head>
 <body>
-  <img src="./images/me.jpg" alt="Chris Harley">
-  <h1>Chris Harley</h1>
-  <p>Former U.S. Army veteran living in Charlotte N.C. I love music, prodcuing it, enginering it, and listenign to it. I enjoy bar-b-q'ing and cold refreshing beverages.</p>
+  <!-- navbar -->
+  <nav id="navbar">
+    <input type="checkbox" class="toggler" id="navi-toggle">
+    <div class="hamburger"><div></div></div>
+    <h3 class="logo"><a href="/">CH</a></h3>
+    <div class="menu">
+      <div>
+        <div>
+          <ul>
+            <li><a href="/" onclick="closeNav()">Home</a></li>
+            <li><a href="./pages/about.html" onclick="closeNav()">About</a></li>
+            <li><a href="./pages/music.html" onclick="closeNav()">Music</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
 
+  <!-- main -->
+
+  <script src="script.js"></script>
 </body>
 </html>
