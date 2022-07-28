@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* css vars */
+:root {
+  --color-light: #F0EEED;
+  --color-dark: #261B15;
+  --color-grey-light: #CAB9B0;
+  --color-grey-dark: #524B48;
+  --color-primary: #5452F5;
+}
+
+body {
+  line-height: 1.5;
+}
+
+img {
+  width: 250px;
+  border-radius: 10px;
+}
