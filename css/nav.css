@@ -1,0 +1,164 @@
+/* navbar */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--color-light);
+}
+
+#navbar h3 {
+  
+}
+
+#navbar h3 a {
+  color: var(--color-dark);
+  background: var(--color-dark);
+  color: var(--color-light);
+  border-radius: 50%;
+  padding: 0.5rem;
+  transition: var(--transition);
+}
+
+#navbar h3 a:hover {
+  background-color: var(--color-primary);
+}
+
+#navbar .toggler {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  cursor: pointer;
+  width: 50px;
+  height: 40px;
+  opacity: 0;
+}
+
+#navbar .hamburger {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+  width: 50px;
+  height: 40px;
+  padding: 0.5rem;
+  border-radius: var(--border-radius);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* hamburger line */
+#navbar .hamburger > div {
+  position: relative;
+  width: 100%;
+  height: 4px;
+  background-color: var(--color-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+
+/* hamburger lines: top & bottom */
+#navbar .hamburger > div::before,
+#navbar .hamburger > div::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  width: 100%;
+  height: 4px;
+  border-radius: var(--border-radius);
+  background-color: inherit;
+}
+
+/* moves line down */
+#navbar .hamburger > div::after {
+  top: 10px;
+}
+
+/* toggler animation */
+#navbar .toggler:checked + .hamburger > div {
+  transform: rotate(135deg);
+}
+
+/* turns lines into X */
+#navbar .toggler:checked + .hamburger > div:before,
+#navbar .toggler:checked + .hamburger > div:after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+/* rotate on hover when checked */
+#navbar .toggler:checked:hover + .hamburger > div {
+  transform: rotate(225deg);
+}
+
+/* Show Menu */
+#navbar .toggler:checked ~ .menu {
+  visibility: visible;
+}
+
+#navbar .toggler:checked ~ .menu > div {
+  transform: scale(1);
+  transition-duration: var(--transition-speed);
+}
+
+#navbar .toggler:checked ~ .menu > div > div {
+  opacity: 1;
+  transform: opacity var(--transition-speed) ease-in-out;
+}
+
+#navbar .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar .menu > div {
+  background: var(--color-light);
+  width: 200vw;
+  height: 100vh;
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  transition: var(--transition);
+}
+
+#navbar .menu > div > div {
+  text-align: center;
+  max-width: 90vw;
+  max-height: 100vh;
+  opacity: 0;
+  transition: opacity var(--transition-speed) ease;
+}
+
+#navbar .menu > div > div > ul > li {
+  color: var(--color-dark);
+  font-size: 1.5rem;
+  padding: 1rem;
+  transition: all var(--transition-speed) ease;
+}
+
+#navbar .menu > div > div > ul > li a {
+  color: inherit;
+  transition: var(--transition);
+}
+
+#navbar .menu > div > div > ul > li a:hover {
+  color: var(--color-primary);
+}
