@@ -15,12 +15,13 @@
   --color-primary: #5452F5;
   --border-radius: 4px;
   --transition: all 0.3s ease-in-out;
-  --transition-speed: 0.3s
+  --transition-speed: 0.3s;
+  --font-family: 'Montserrat', sans-serif;
 }
 
 body {
   line-height: 1.5;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--font-family);
   background-color: var(--color-light);
   font-size: 16px;
 }
@@ -40,4 +41,23 @@ img {
 p {
   font-weight: 100;
 }
+
+.btn {
+  display: block;
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  font-family: var(--font-family);
+  font-size: 1.1rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--color-light);
+  border: 1px solid var(--color-dark);
+  color: var(--color-dark)
+}
+
+
 

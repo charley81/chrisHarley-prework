@@ -4,15 +4,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- google fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;900&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/69d25c3dbf.js" crossorigin="anonymous"></script>
+  <!-- style sheets -->
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/nav.css">
-  <link rel="stylesheet" href="../css/home.css">
   <link rel="stylesheet" href="../css/about.css">
-  <link rel="stylesheet" href="../css/music.css">
   <title>About | Chris Harley</title>
 </head>
-<body><!-- navbar -->
+<body>
+  <!-- navbar -->
   <nav id="navbar">
     <input type="checkbox" class="toggler" id="navi-toggle">
     <div class="hamburger"><div></div></div>
@@ -29,7 +32,36 @@
       </div>
     </div>
   </nav>
-  <h1>About Page</h1>
+
+  <!-- about main -->
+  <main id="about-main">
+    <header>
+      <h3>A lil something about me</h3>
+      <p>I was in the U.S. Army for ten years and jumped out of planes for eight of those years. I loved every minute of it but unfortunately that takes a toll on your body and I decided to get out and finish my degree in music business from Berklee College of Music. After a couple of years of working manufacturing and running a recording studio out of my basement I decided to look for a different career that I would love, would be able to express my creativity, and would provide a great life for my family and I, which led me to software engineering.</p>
+      <br>
+      <p>I’m a huge American football fan, especially college football (Go Tigers, Clemson that is) and I enjoy cooking, bar-b-q’ing, and drinking cold refreshing beverages while watching the games.</p>
+      <ul class="social-icons">
+        <li class="icon"><a href="https://www.linkedin.com/in/charley81/" target="_blank"><img src="../images/linkedin-logo.svg" alt=""></a></li>
+        <li class="icon"><a href="https://github.com/charley81" target="_blank"><img src="../images/github-logo.svg" alt=""></a></li>
+      </ul>
+    </header>
+    
+    <div class="contact">
+      <h3>Let's Chat</h3>
+      <form name="contact" method="POST" data-netlify="true">
+        <label for="name">
+          <input type="text" placeholder="name..." name="name">
+        </label>
+        <label for="email">
+          <input type="text" placeholder="email..." name="email">
+        </label>
+        <label for="message">
+          <textarea name="message" id="" cols="30" rows="10" placeholder="message..."></textarea>
+        </label>
+        <input type="submit" value="submit" class="btn">
+      </form>
+    </div>
+  </main>
   <script src="../script.js"></script>
 </body>
 </html>

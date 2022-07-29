@@ -1,0 +1,60 @@
+#about-main {
+  margin: 10vh auto 0;
+  padding: 1rem;
+  max-width: 1000px;
+}
+
+
+#about-main p {
+  color: var(--color-grey-dark);
+  margin: 1rem 0;
+}
+
+.social-icons {
+  display: flex;
+  
+}
+
+.icon {
+  padding-right: 1rem;
+}
+
+.icon img{
+  width: 2rem;
+  height: 2rem;
+}
+
+.icon img:hover {
+  color: red;
+}
+
+label, input, textarea {
+  display: block;
+  width: 100%;
+  margin: 1rem 0;
+  border-radius: var(--border-radius);
+  outline: none;
+  border: none;
+}
+
+input, textarea {
+  padding: 1rem;
+  font-family: var(--font-family);
+}
+
+.contact {
+  margin: 4rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  #about-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .contact {
+    margin: 0;
+  }
+
+}
