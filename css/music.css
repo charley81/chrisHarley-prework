@@ -24,3 +24,7 @@ td {
 }
 
 tr:nth-child(even){background-color: var(--color-grey-light)}
+
+.video {
+  margin: 2rem 0;
+}
